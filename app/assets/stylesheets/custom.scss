@@ -1,0 +1,259 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222258),color-stop(100%, #4a2959));
+  background-image: -moz-linear-gradient(top, #222258,#4a2959);
+  background-image: -webkit-linear-gradient(top, #222258,#4a2959);
+  background-image: linear-gradient(to bottom, #222258,#4a2959);
+  color: #000;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 100%;
+  height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  text-rendering: optimizelegibility;
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-family: "Montserrat",sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 34px;
+  line-height: 1.333em;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h3, .h3 {
+  color: #de4095;
+  font-family: "Montserrat",sans-serif;
+  margin: 1em 0 15px;
+  text-transform: uppercase;
+  font-size: 1.375em;
+}
+
+a, a:visited {
+    color: #f3db77;
+    text-decoration: none;
+}
+
+a:link, a:visited:link {
+  -webkit-tap-highlight-color: #5ddcee;
+}
+
+a.button, a:visited.button {
+  background: #30b5c8;
+  color: #fff;
+}
+
+body.home {
+  background: image-url("splash-bg.jpg") no-repeat center top fixed;
+  background-size: cover;
+  margin: 0;
+  .header {
+    background: transparent;
+    height: auto;
+  }
+}
+
+.header {
+  padding-top: 30px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  font-family: "Montserrat",sans-serif;
+  padding: 41px 34px 34px 34px;
+  position: relative;
+  text-align: center;
+  z-index: 0; 
+  a {
+    display: inline-block;
+    &:link {
+      -webkit-tap-highlight-color: #5ddcee;
+    }
+    &:visited {
+      color: #f3db77;
+      text-decoration: none;
+    }
+  }
+}
+
+.splash {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+
+  #signpost {
+    background: image-url("splash-post.png") no-repeat center top;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    height: auto;
+    min-height: 450px;
+    margin: 0 auto;
+    text-align: center;
+    .city {
+      font-size: 10px;
+      margin: 0 auto 10px;
+      max-width: 650px;
+      position: relative;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .city-inner {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center top;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        -webkit-background-size: contain;
+        background-size: contain;
+        color: #f29d22;
+        height: auto;
+        max-width: 100%;
+        text-align: center;
+        padding: 25px 5px;
+        position: relative;
+        // .one {
+        //   background: image-url("splash-signs-01");
+        // }
+        h1 {
+          color: currentColor;
+          font-size: 1.8em;
+          line-height: 1em;
+          margin: 0;
+          text-align: inherit;
+          text-decoration: none;
+          text-shadow: 0px 1px 2px #000;
+        }
+        h3 {
+          color: currentColor;
+          font-size: 1.3em;
+          margin: 0;
+          text-shadow: 0px 1px 2px #000;
+          .location {
+            margin-bottom: 10px;
+          }
+          .dates {
+            color: #ffbf36;
+            display: inline-block;
+            font-size: 1.3em;
+            margin-right: 5px;
+            vertical-align: middle;
+          }
+        }
+        a.button {
+          height: auto;
+          font-size: 12px;
+          margin: 0 5px;
+          min-width: 0;
+          vertical-align: middle;
+          padding: 2px 8px;
+        }
+      }
+    }
+  }
+}
+
+.city-inner.one {
+  background: image-url("splash-signs-01.png");
+}
+
+.city-inner.two {
+  background: image-url("splash-signs-02.png");
+}
+
+@media screen and (min-width: 481px) {
+  .splash {
+    position: relative;
+    #signpost {
+      height: 817px;
+      .city {
+        font-size: 12px;
+        .city-inner {
+          padding: 35px 0 35px 85px;
+          text-align: left;
+          h1 {
+            font-size: 2.8em;
+          }
+          h3 {
+            font-size: 1.8em;
+            .dates {
+              font-size: 2.0em;
+              margin-right: 15px;
+            }
+          }
+          a.button {
+            font-size: 17px;
+            padding: 7px 10px;
+          }
+        }
+      }
+    }
+  }
+  .city-inner.two {
+    padding-left: 115px;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .header {
+      margin-bottom: -35px;
+      height: 510px;
+      padding-top: 0;
+  }
+  .splash {
+    #signpost {
+      .city {
+        font-size: 16px;
+        .city-inner {
+          height: 225px;
+          padding: 45px 0 35px 85px;
+          .two {
+            
+          }
+        }
+      }
+    }
+  }
+
+  .city-inner.two {
+    right: 25px;
+    padding-left: 85px;
+  }
+}
+
+
+@media screen and (min-height: 1025px) {
+  .splash {
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .header {
+      margin-bottom: -42px;
+  }
+}
+
+
+
+
+
