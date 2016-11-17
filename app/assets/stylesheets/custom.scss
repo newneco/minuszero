@@ -50,6 +50,7 @@ h3, .h3 {
 a, a:visited {
     color: #f3db77;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 a:link, a:visited:link {
@@ -90,7 +91,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 }
 
 body.home {
-  background: image-url("splash-bg.jpg") no-repeat center top fixed;
+  background: image-url("splash-bg-new.jpg") no-repeat center top fixed;
   background-size: cover;
   margin: 0;
   .header {
@@ -203,10 +204,10 @@ body.home {
 }
 
 .city-inner.one {
-  background: image-url("splash-signs-01") no-repeat;
+  background: image-url("splash-signs-03.png") no-repeat;
 }
 .city-inner.two {
-  background: image-url("splash-signs-02.png") no-repeat;
+  background: image-url("splash-signs-04.png") no-repeat;
 }
 
 ul.social.list-inline {
@@ -215,6 +216,10 @@ ul.social.list-inline {
   a {
     padding-right: 20px;
     color: #ffbf36;
+    transition: all 0.5s ease;
+    &:hover {
+      color: #5ddcee;
+    }
   }
   
 }
