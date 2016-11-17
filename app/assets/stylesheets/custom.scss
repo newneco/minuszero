@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
@@ -57,6 +59,34 @@ a:link, a:visited:link {
 a.button, a:visited.button {
   background: #30b5c8;
   color: #fff;
+}
+
+a.button:active, a:visited.button:active {
+  background: #2091b2;
+}
+
+a.button:hover, a.button:focus, a:visited.button:hover, a:visited.button:focus {
+  background: #5ddcee;
+  text-decoration: none;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+  background: #30b5c8;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 0;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 7px 20px;
+  text-align: center;
 }
 
 body.home {
@@ -131,9 +161,7 @@ body.home {
         text-align: center;
         padding: 25px 5px;
         position: relative;
-        // .one {
-        //   background: image-url("splash-signs-01");
-        // }
+        
         h1 {
           color: currentColor;
           font-size: 1.8em;
@@ -148,17 +176,19 @@ body.home {
           font-size: 1.3em;
           margin: 0;
           text-shadow: 0px 1px 2px #000;
-          .location {
-            margin-bottom: 10px;
-          }
-          .dates {
-            color: #ffbf36;
-            display: inline-block;
-            font-size: 1.3em;
-            margin-right: 5px;
-            vertical-align: middle;
-          }
         }
+        h3.location {
+          margin-bottom: 10px;
+        }
+
+        h3.dates {
+          color: #ffbf36;
+          display: inline-block;
+          font-size: 1.3em;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+          
         a.button {
           height: auto;
           font-size: 12px;
@@ -168,16 +198,24 @@ body.home {
           padding: 2px 8px;
         }
       }
+      .city-inner.one {
+        background: image-url("splash-signs-01") no-repeat;
+      }
+      .city-inner.two {
+        background: image-url("splash-signs-02.png") no-repeat;
+      }
     }
   }
 }
 
-.city-inner.one {
-  background: image-url("splash-signs-01.png");
-}
-
-.city-inner.two {
-  background: image-url("splash-signs-02.png");
+ul.social.list-inline {
+  font-size: 3em;
+  margin-right: 100px;
+  a {
+    padding-right: 20px;
+    color: #ffbf36;
+  }
+  
 }
 
 @media screen and (min-width: 481px) {
@@ -194,11 +232,14 @@ body.home {
             font-size: 2.8em;
           }
           h3 {
-            font-size: 1.8em;
-            .dates {
+            font-size: 1.8em; 
+          }
+
+          h3.dates {
+
               font-size: 2.0em;
               margin-right: 15px;
-            }
+           
           }
           a.button {
             font-size: 17px;
@@ -208,8 +249,18 @@ body.home {
       }
     }
   }
+
+  /*.splash .city .city-inner h3.dates {
+    font-size: 2.0em;
+    margin-right: 15px;
+  }*/
+
   .city-inner.two {
     padding-left: 115px;
+  }
+
+  .splash .city .city-inner h3 {
+    font-size: 1.8em;
   }
 }
 
