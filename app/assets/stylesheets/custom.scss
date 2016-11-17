@@ -4,12 +4,12 @@
 @import "font-awesome";
 
 body {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222258),color-stop(100%, #4a2959));
-  background-image: -moz-linear-gradient(top, #222258,#4a2959);
-  background-image: -webkit-linear-gradient(top, #222258,#4a2959);
-  background-image: linear-gradient(to bottom, #222258,#4a2959);
+  // background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+  // background-size: 100%;
+  // background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222258),color-stop(100%, #4a2959));
+  // background-image: -moz-linear-gradient(top, #222258,#4a2959);
+  // background-image: -webkit-linear-gradient(top, #222258,#4a2959);
+  // background-image: linear-gradient(to bottom, #222258,#4a2959);
   color: #000;
   font-family: "Noto Sans",sans-serif;
   font-size: 100%;
@@ -93,7 +93,6 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 body.home {
   background: image-url("splash-bg-new.jpg") no-repeat center top fixed;
   background-size: cover;
-  height: 100%;
   margin: 0;
   .header {
     background: transparent;
