@@ -93,6 +93,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 body.home {
   background: image-url("splash-bg-new.jpg") no-repeat center top fixed;
   background-size: cover;
+  height: 100%;
   margin: 0;
   .header {
     background: transparent;
