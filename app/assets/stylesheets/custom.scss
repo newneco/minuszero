@@ -198,14 +198,15 @@ body.home {
           padding: 2px 8px;
         }
       }
-      .city-inner.one {
-        background: image-url("splash-signs-01") no-repeat;
-      }
-      .city-inner.two {
-        background: image-url("splash-signs-02.png") no-repeat;
-      }
     }
   }
+}
+
+.city-inner.one {
+  background: image-url("splash-signs-01") no-repeat;
+}
+.city-inner.two {
+  background: image-url("splash-signs-02.png") no-repeat;
 }
 
 ul.social.list-inline {
@@ -277,17 +278,13 @@ ul.social.list-inline {
         .city-inner {
           height: 225px;
           padding: 45px 0 35px 85px;
-          .two {
-            
-          }
+        }
+        .city-inner.two {
+          right: 25px;
+          padding-left: 85px;
         }
       }
     }
-  }
-
-  .city-inner.two {
-    right: 25px;
-    padding-left: 85px;
   }
 }
 
