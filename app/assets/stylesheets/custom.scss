@@ -3,6 +3,10 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+html {
+    height: 100%;
+}
+
 body {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
   background-size: 100%;
