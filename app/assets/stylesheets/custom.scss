@@ -8,12 +8,13 @@ html {
 }
 
 body {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222258),color-stop(100%, #4a2959));
-  background-image: -moz-linear-gradient(top, #222258,#4a2959);
-  background-image: -webkit-linear-gradient(top, #222258,#4a2959);
-  background-image: linear-gradient(to bottom, #222258,#4a2959);
+  background: image-url("splash-bg-new.jpg") no-repeat center top fixed;
+  // background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+  // background-size: 100%;
+  // background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222258),color-stop(100%, #4a2959));
+  // background-image: -moz-linear-gradient(top, #222258,#4a2959);
+  // background-image: -webkit-linear-gradient(top, #222258,#4a2959);
+  // background-image: linear-gradient(to bottom, #222258,#4a2959);
   color: #000;
   font-family: "Noto Sans",sans-serif;
   font-size: 100%;
@@ -77,6 +78,10 @@ a.button:hover, a.button:focus, a:visited.button:hover, a:visited.button:focus {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 input[type="submit"], input[type="reset"], input[type="button"], button, .button {
   background: #30b5c8;
   -moz-border-radius: 20px;
@@ -97,7 +102,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 }
 
 body.home {
-  background: image-url("splash-bg-new.jpg") no-repeat center top fixed;
+  // background: image-url("splash-bg-new.jpg") no-repeat center top fixed;
   background-size: cover;
   margin: 0;
   padding-top: 50px;
@@ -147,22 +152,28 @@ body.home {
   .navbar-brand {
     background: image-url("minuszero-logo.png") no-repeat center 2px;
     height: 50px;
-    width: 100px
+    width: 100px;
+    text-indent: -1000px;
   }
 
   .navbar-nav {
     font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+
     li {
       a {
         color: #ffbf36;
         &:hover {
           color: #5ddcee;
         }
+        &:focus {
+          color: #5ddcee;
+        }
       }
     }
   }
 }
-
 .splash {
   position: absolute;
   bottom: 0;
@@ -261,6 +272,17 @@ ul.social.list-inline {
     }
   }
   
+}
+
+.image-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 5em;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px #000;
+    line-height: 1;
+  }
 }
 
 @media screen and (min-width: 481px) {
