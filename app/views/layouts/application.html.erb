@@ -2,28 +2,23 @@
 <html>
   <head>
     <title>MinusZero</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', "https://fonts.googleapis.com/css?family=Nunito:400,700,900", "https://fonts.googleapis.com/css?family=Montserrat:400,700",  media: 'all' %>
+    <%= javascript_include_tag 'application' %>
     <%= render 'layouts/shim' %>
-    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
 
-  <body class="home">
+  <body data-no-turbolink="true">
     <%= render 'layouts/navbar' %>
     <%= yield %>
+    <%= render 'layouts/navbar-bottom' %>
     <%= render 'layouts/footer' %>
 
-    <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-     ga('create', 'UA-87961249-1', 'auto');
-     ga('send', 'pageview');
-
+    <script> 
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-87961249-1', 'auto'); ga('send', 'pageview');
     </script>
   </body>
 </html>

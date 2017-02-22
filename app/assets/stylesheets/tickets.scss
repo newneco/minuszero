@@ -1,0 +1,162 @@
+// site colors
+$white: #fff;
+$button-blue: #30b5c8;
+$button-blue-hover: #248896;
+$purple: #420256;
+$light-purple: #7e5da1;
+$dark-purple: #220c48;
+$red: #d93350;
+$yellow: #ffbf36;
+$pink: #de4095;
+$green: #519571;
+$dark-blue: #181852;
+
+
+// transitions
+$transition: all 0.5s ease;
+
+// helpers
+$text-shadow: 2px 2px 2px $dark-purple;
+
+// fonts
+@font-face {
+  font-family: 'chinese-rocks';
+  src: asset-url('chinese-rocks.ttf') format('truetype');
+}
+
+
+
+.tab-nav {
+	background-color: $button-blue;
+	border-bottom: 1px solid $white;
+	padding-top: 15px;
+	// margin-top: 15px;
+	// padding-top: 15px;
+	h3 {
+		color: $white;
+	}
+	.nav-tabs {
+		border-bottom: 0 solid #ddd;
+		li {
+			width: 50%;
+			a {
+				background-color: transparent;
+				border: 0 solid #ddd;
+				border-radius: 0 0 0 0;
+				&:hover {
+					background-color: transparent;
+					h3 {
+						color: $pink;
+					}
+				}
+			}
+		}
+		li.active {
+			a {
+				background-color: transparent;
+				border: 0 solid #ddd;
+				border-radius: 0 0 0 0;
+			}
+			h3 {
+				color: $pink;
+			}
+		}
+	}
+}
+
+
+.box-one {
+	background-color: $dark-blue;
+	padding: 15px;
+	color: $white;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 2px solid $white;
+	margin-bottom: 	15px;
+
+	.btn-default {
+		border: 2px solid $white;
+		&:hover {
+			background-color: $button-blue-hover;
+		    color: $white;
+		    font-weight: 800;
+		    border: 2px solid $button-blue-hover;
+		    text-shadow: 1px 1px 1px #666;
+		}
+	}
+}
+
+.box-two {
+	background-color: $light-purple;
+	padding: 15px;
+	color: $white;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 2px solid $white;
+	margin-bottom: 15px;
+
+	.btn-default {
+		border: 2px solid $white;
+		&:hover {
+			background-color: $button-blue-hover;
+		    color: $white;
+		    font-weight: 800;
+		    border: 2px solid $button-blue-hover;
+		    text-shadow: 1px 1px 1px #666;
+		}
+	}
+}
+
+.box-three {
+	background-color: $green;
+	padding: 15px;
+	color: $white;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 2px solid $white;
+	margin-bottom: 15px;
+
+	.btn-default {
+		border: 2px solid $white;
+		&:hover {
+			background-color: $button-blue-hover;
+		    color: $white;
+		    font-weight: 800;
+		    border: 2px solid $button-blue-hover;
+		    text-shadow: 1px 1px 1px #666;
+		}
+	}
+}
+
+.right-col {
+	background-color: $button-blue;
+	padding: 15px;
+	color: $white;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 2px solid $white;
+	margin-bottom: 15px; 
+}
+
+.tickets-title {
+	font-size: 4em;
+	color: $yellow;
+	text-shadow: $text-shadow;
+}
+
+.upgrades {
+	border: 2px solid $white;
+	border-radius: 5px;
+	background-color: $red;
+	padding: 15px;
+	.btn-default {
+		border: 2px solid $white;
+		&:hover {
+			background-color: $button-blue-hover;
+		    color: $white;
+		    font-weight: 800;
+		    border: 2px solid $button-blue-hover;
+		    text-shadow: 1px 1px 1px #666;
+		}
+	}
+}

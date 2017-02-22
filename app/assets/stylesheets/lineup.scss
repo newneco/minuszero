@@ -1,0 +1,40 @@
+// site colors
+$white: #fff;
+$button-blue: #30b5c8;
+$button-blue-hover: #248896;
+$purple: #420256;
+$light-purple: #7e5da1;
+$dark-purple: #220c48;
+$red: #d93350;
+$yellow: #ffbf36;
+$pink: #de4095;
+$dark-blue: #181852;
+
+
+// transitions
+$transition: all 0.5s ease;
+
+// helpers
+$text-shadow: 2px 2px 2px $dark-purple;
+
+// fonts
+@font-face {
+  font-family: 'chinese-rocks';
+  src: asset-url('chinese-rocks.ttf') format('truetype');
+}
+
+
+.artist {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+	.artist-name {
+		position: absolute;
+		font-family: 'chinese-rocks';
+		text-shadow: $text-shadow;
+		color: $white;
+		font-size: 3em;
+		bottom: -30px;
+		padding: 15px;
+	}
+}

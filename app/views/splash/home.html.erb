@@ -1,97 +1,74 @@
-<div id="container">
-  <header class="header text-center" role="banner">
-    <%= link_to image_tag("minus-zero-festival-logo.png",alt: "Minus Zero Festival"),
-            'http://minuszerofestival.com/', :id => "logo" %>
+<div class="hero">
+  <%= video_tag("/minus-zero.mp4", controls: false, :autoplay => true, :loop => true, :muted => true)%>
+  <header class="header text-center hidden-xs visibile-sm hidden-md hidden-lg" role="banner">
+    <div class="link-cover">
+      <a href="#">
+        <%= image_tag('mzf-logo-mobile.png') %>
+      </a>
+    </div>
   </header>
-  <div class="leader">
-    <h2 class="text-center">STRATTON MOUNTAIN, VT</h2>
-    <h2 class="text-center">APRIL 7th - 8th, 2017</h2>
-  </div>
-  <div class="splash">
-    <div id="signpost">
-      <div class="city">
-        <div class="city-inner one">
-          <h1>BASSNECTAR + GRIZ</h1>
-          <h3 class="location">TICKETS ON SALE NOW!</h3>
-          <h3 class="dates"></h3>
-          <%= link_to "Buy Tickets Here", "https://minuszero.frontgatetickets.com/", :target => "_blank", :class => "button btn-primary" %>
-        </div>
-      </div>
-      <div class="city">
-        <div class="city-inner two">
-          <h1>Minus Zero Store</h1>
-          <h3 class="location"></h3>
-          <h3 class="dates"></h3>
-          <%= link_to "Available Here", "http://merch.minuszerofestival.com/", :target => "_blank", :class => "button btn-primary" %>
-        </div>
-      </div>
-      <div class="city">
-        <div class="city-inner one">
-          <h1>Connect With Us</h1>
-          <ul class="social list-inline">
-            <li>
-              <%= link_to "https://www.facebook.com/minuszerofest/", :target => "_blank" do %>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "https://twitter.com/minuszerofest", :target => "_blank" do %>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "https://www.instagram.com/minuszerofest/", :target => "_blank" do %>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "https://www.youtube.com/watch?v=A3Ur0YZzslw&feature=youtu.be", :target => "_blank" do %>
-                <i class="fa fa-youtube" aria-hidden="true"></i>
-              <% end %>
-            </li>
-            <!-- <li>
-              <a type="button" class="button btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Subscribe</a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
+  <header class="header text-center hidden-xs hidden-sm visible-md visible-lg" role="banner">
+    <div class="link-cover">
+      <a href="#">
+        <%= image_tag('mzf-logo.png') %>
+      </a>
     </div>
-  </div>
+  </header>
+</div>
+<div class="container-fluid section-two">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 lineup">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="title text-center">Bassnecter + Griz + Zeds Dead</h2>
+        </div>
+      </div>
+        <h3 class="text-center">With more to come!</h3>
+      <!-- <p class="text-center"><%= link_to "MORE TO COME", lineup_path, :class => "btn btn-default" %></p> -->
+      <br>
+      <br>
+      <br>
+    </div><!-- display -->
 
- <!--  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <div class="container"> -->
-          <!-- Begin MailChimp Signup Form -->
-         <!--  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style> -->
-          <!-- <div id="mc_embed_signup">
-          <form action="//minuszerofestival.us12.list-manage.com/subscribe/post?u=a95431a9d77aefbd9ada9d9b1&amp;id=dab0a97219" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-             <div id="mc_embed_signup_scroll">
-          <h2>Subscribe to our mailing list</h2>
-          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-          <div class="mc-field-group">
-          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-          </label>
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    <div class="col-xs-12 col-md-6">
+      <div class="row">
+        <div class="col-xs-12 vip-tickets">
+          <div class="link-cover">
+            <h2 class="title text-center">VIP TICKETS AVAILABLE</h2>
+            <p class="text-center"><%= link_to "TICKETS", tickets_path, :class => "btn btn-default" %></p>
           </div>
-          <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>  -->   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-             <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a95431a9d77aefbd9ada9d9b1_dab0a97219" tabindex="-1" value=""></div>
-             <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-             </div>
-          </form>
+        </div><!-- display -->
+        <div class="col-xs-12 ga-tickets padding">
+          <div class="link-cover">
+            <h2 class="title text-center">GA TICKETS AVAILABLE</h2>
+            <p class="text-center"><%= link_to "TICKETS", tickets_path, :class => "btn btn-default" %></p>
           </div>
-          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
-          <!--End mc_embed_signup-->
-        <!-- </div>
-      </div> -->
+        </div><!-- display -->
+      </div><!-- row -->
+    </div><!-- display -->
+  </div><!-- row -->
+</div><!-- container -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="stratton col-xs-12 col-md-4">
+      <div class="headers">
+        <h2 class="title text-center">Minus Zero Lodging</h2>
+      </div>
+      <p class="text-center"><%= link_to "LEARN MORE!", lodging_path, :class => 'btn btn-default' %></p>
     </div>
+    <div class="merch col-xs-12 col-md-4">
+      <div class="headers"><h2 class="title text-center">Minus Zero Merch</h2></div>
+      <p class="text-center"><%= link_to "STORE", "http://merch.minuszerofestival.com/", :target => "_blank", :class => 'btn btn-default' %></p>
+    </div>
+    <div class="weather col-xs-12 col-md-4">
+      <!-- <h2 class="title text-center">Stratton WEATHER</h2> -->
+      <!-- <p class="text-center"><button class="btn btn-default">LEARN MORE</button></p> -->
+      <div id='openweathermap-widget'></div>   
   </div>
 </div>
+
+
+
+
+
+
