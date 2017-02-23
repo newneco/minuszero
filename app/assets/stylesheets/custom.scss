@@ -116,7 +116,7 @@ h6 {
 
 .title {
   font-family: 'chinese-rocks';
-  font-size: 2.5em;
+  font-size: 3.5em;
   letter-spacing: 2px;
   text-shadow: $text-shadow;
   color:  $pink;
@@ -174,7 +174,9 @@ img {
 .lineup {
  // background-image: image-url('section-two-bg.jpg');
  //background-color: button-blue;
-  border: 2px solid $white;
+  border-top: 2px solid $white;
+  // border-right: 2px solid $white;
+  border-left: 2px solid $white;
   overflow: hidden;
   padding: 128px 0;
 }
@@ -190,9 +192,12 @@ img {
   // background-image: image-url('section-two-bg.jpg');
 //  background-color: $light-purple;
   // margin: 15px 0 15px 15px;
-  border: 2px solid $white;
+  // border: 2px solid $white;
   padding: 78px;
   overflow: hidden;
+  // border-top: 2px solid $white;
+  border-right: 2px solid $white;
+  border-left: 2px solid $white;
 }
 
 .underline {
@@ -549,7 +554,7 @@ ul.social.list-inline {
 
 //LODGING
 .lodging {
-  padding: 60px 5px 0 5px;
+  padding: 30px 5px 0 5px;
 }
 .stratton-lodging {
   background-color: $green;
