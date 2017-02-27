@@ -791,6 +791,14 @@ ul.social.list-inline {
     background-color: $green;
     border: 2px solid $white;
     border-radius: 5px;
+    background-image: image-url('bg-two.jpg');
+    background-position: -850px -267px;
+    p {
+      text-shadow: $text-shadow;
+    }
+    .title {
+      font-size: 2em;
+    }
     .modal-header {
       border-bottom: 0px solid #e5e5e5;
     }
