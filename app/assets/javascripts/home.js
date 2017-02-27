@@ -37,3 +37,43 @@ function createEmail(){
         swal({   title: "Error!",   text: "The email field is required.",   type: "error" });
     }
 }
+
+function loadPopUp(){
+    $("#btnModal").removeAttr("disabled");
+    $("#initialModal").modal();
+}
+
+function createModalEmail(){
+   $("#btnModal").attr("disabled", "disabled");
+   if($("#emailModal").val() != ""){
+       if(isEmail($("#emailModal").val())){
+            var jqxhr = $.get( "/suscribe?email=" + $("#emailModal").val(), function() {
+                $("#emailModal").val("");
+            })
+            .done(function(data) {
+                if(data.error){
+                    $("#btnModal").removeAttr("disabled");
+                    swal({   title: "Error!",   text: data.error,   type: "error" });
+                }
+                else {
+                    $("#initialModal").modal("hide");
+                    swal({   title: "Success!",   text: "Now you are suscribed.",   type: "success" });
+                }
+                
+            })
+            .fail(function() {
+                $("#btnModal").removeAttr("disabled");
+                swal({   title: "Error!",   text: "error.",   type: "error" });
+            });
+       }
+       else {
+           $("#btnModal").removeAttr("disabled");
+           swal({   title: "Error!",   text: "A valid email is required.",   type: "error" });
+       }
+       
+   }
+    else {
+        $("#btnModal").removeAttr("disabled");
+        swal({   title: "Error!",   text: "The email field is required.",   type: "error" });
+    }
+}
