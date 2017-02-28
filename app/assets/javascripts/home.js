@@ -29,12 +29,12 @@ function createEmail(){
             });
        }
        else {
-           swal({   title: "Error!",   text: "A valid email is required.",   type: "error" });
+           swal({   title: "Error!",   text: "Yikes! A valid email is required.",   type: "error" });
        }
        
    }
     else {
-        swal({   title: "Error!",   text: "The email field is required.",   type: "error" });
+        swal({   title: "Error!",   text: "Oh snap! You have not provided a valid email.",   type: "error" });
     }
 }
 
