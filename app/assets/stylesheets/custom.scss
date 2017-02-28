@@ -769,7 +769,49 @@ ul.social.list-inline {
   // }
 }
 
-
+.modal {
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    color: $white;
+    background-color: $green;
+    border: 2px solid $white;
+    border-radius: 5px;
+    background-image: image-url('bg-two.jpg');
+    background-position: -850px -267px;
+    p {
+      text-shadow: $text-shadow;
+      font-size: 1.2em;
+      color: $yellow;
+      font-weight: 700;
+    }
+    .title {
+      font-size: 2em;
+    }
+    .form-control {
+      border: 2px solid $pink;
+    }
+    .modal-header {
+      border-bottom: 0px solid #e5e5e5;
+    }
+    .modal-footer {
+      border-top: 0px solid #e5e5e5;
+    }
+}
 
 
 

@@ -66,6 +66,38 @@
       <div id='openweathermap-widget'></div>   
   </div>
 </div>
+   
+<div class="modal fade" id="initialModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="vertical-alignment-helper">
+      <div class="modal-dialog vertical-align-center" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center title" id="myModalLabel">STAY UP TO DATE WITH MINUS ZERO!</h4>
+            <p class="text-center">Get first dibs on exclusive deals and offerings.</p>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <!-- <label for="recipient-name" class="control-label">Email:</label> -->
+                <input type="email" class="form-control" id="emailModal" placeholder="Enter your email address here!">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            <button type="button" class="btn btn-default" id="btnModal" onclick="createModalEmail();">SUBSCRIBE NOW!</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>    
+    
+<script>
+    $( document ).ready(function() {
+        setTimeout(function(){ loadPopUp(); }, 5000);
+    });
+</script>
 
 
 
