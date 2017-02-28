@@ -39,8 +39,12 @@ function createEmail(){
 }
 
 function loadPopUp(){
-    $("#btnModal").removeAttr("disabled");
-    $("#initialModal").modal();
+    if(!$.cookie('popup')){
+        $.cookie('popup', '1', { expires: 7 });   
+        
+        $("#btnModal").removeAttr("disabled");
+        $("#initialModal").modal();
+    }
 }
 
 function createModalEmail(){
