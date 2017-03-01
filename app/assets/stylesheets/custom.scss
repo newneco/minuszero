@@ -18,6 +18,26 @@ $pink: #de4095;
 $dark-blue: #181852;
 $green: #519571;
 $blue: #171448;
+$time-blue: #95b1dd;
+
+$title-blue: $button-blue;
+
+.helper {
+  margin: 0;
+  line-height: 50px;
+  font-size: 3em !important;
+}
+
+.white {
+  color: $white !important;
+}
+
+.blue {
+  color: $button-blue !important;
+}
+.time-blue {
+  color: $time-blue !important;
+}
 
 html {
   height: auto;
@@ -39,6 +59,7 @@ $transition: all 0.5s ease;
 
 // helpers
 $text-shadow: 2px 2px 2px $dark-purple;
+$lineup-shadow: 1px 1px 1px $dark-purple;
 
 // fonts
 @font-face {
@@ -590,21 +611,45 @@ ul.social.list-inline {
   }
 }
 
-//ARTIST
+//lINEUP
 .artist-list {
   font-family: 'chinese-rocks', 'san-serif';
   font-size: 2em;
   text-shadow: $text-shadow;
+  li {
+    color: $pink;
+    margin: 0;
+  }
+  span {
+    color: $white;
+  }
 }
 .friday {
-  border: 2px solid $white;
-  border-radius: 5px;
-  background-color: $button-blue;
+  // border: 2px solid $white;
+  // border-radius: 5px;
+  // background-color: $button-blue;
 }
 .saturday {
-  border: 2px solid $white;
-  border-radius: 5px;
-  background-color: $dark-purple;
+  // border: 2px solid $white;
+  // border-radius: 5px;
+  // background-color: $dark-purple;
+}
+.lineup-title {
+  font-size: 2.2em;
+  margin: 0;
+  color: $button-blue;
+  line-height: 35px;
+}
+.lineup-header {
+  font-size: 6em;
+  margin: 0;
+  color: $button-blue;
+  font-family: 'chinese-rocks';
+  text-shadow: $text-shadow;
+}
+
+.color-blue {
+  color: $title-blue;
 }
 
 //FOOTER
