@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/shuttle', to: 'splash#shuttle', as: 'shuttle'
   get '/faq', to: 'splash#faq', as: 'faq'
   get '/terms', to: 'splash#terms', as: 'terms'
+  get '/past-lineup', to: 'splash#past-lineup', as: 'past-lineup'
   get '/suscribe', to: 'splash#suscribe', as: 'suscribe'
   get '/send_contact', to: 'splash#send_contact', as: 'send_contact'
 
