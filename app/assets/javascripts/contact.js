@@ -34,7 +34,7 @@ $( document ).ready(function() {
                         $("#contactMessage").val("");
                         $("#captchaObject").val("");
                         $("#bt_contact").removeAttr("disabled");
-                        swal({   title: "Success!",   text: "Thanks for contact us.",   type: "success" }, function(){ });
+                        swal({   title: "Success!",   text: "Thanks for contacting us.",   type: "success" }, function(){ });
                     })
                     .fail(function() {
                         $("#bt_contact").removeAttr("disabled");
