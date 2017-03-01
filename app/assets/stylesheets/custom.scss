@@ -61,6 +61,13 @@ html {
   padding-top: 60px;
 }
 
+.border-left-lineup {
+  border-left: 2px solid $white;
+}
+.border-right-lineup {
+  border-right: 2px solid $white;
+}
+
 
 // transitions
 $transition: all 0.5s ease;
