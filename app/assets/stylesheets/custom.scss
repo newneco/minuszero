@@ -78,6 +78,14 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
 .overflow {
   overflow: hidden;
 }
+.font-size {
+  font-size: 3em !important;
+}
+.font-size-two {
+  font-size: 1.5em !important;
+  margin: 0;
+  padding: 0;
+}
 
 // fonts
 @font-face {
@@ -453,7 +461,7 @@ img {
   }
   .social-icons {
     margin: 0;
-    padding-top: 5px;
+    // padding-top: 5px;
     font-size: 2em;
     color: yellow;
     li {
@@ -634,6 +642,10 @@ ul.social.list-inline {
   font-family: 'chinese-rocks', 'san-serif';
   font-size: 2em;
   text-shadow: $text-shadow;
+  letter-spacing: 1px;
+  p {
+    margin: 0 0 -5px;
+  }
   li {
     color: $yellow;
     margin: 0;
