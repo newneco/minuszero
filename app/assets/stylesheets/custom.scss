@@ -770,6 +770,21 @@ ul.social.list-inline {
   background-color: $dark-purple;
 }
 
+//RAIL JAM
+.jam-info {
+  background-color: $dark-purple;
+  border: 5px solid $white;
+  padding: 15px;
+  border-radius: 5px;
+}
+.professionals {
+  background-color: $button-blue;
+  border: 5px solid $white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
 @media screen and (min-width: 320px) { 
  .upgrades {
     .btn-default {
