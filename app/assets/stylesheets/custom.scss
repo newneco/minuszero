@@ -91,6 +91,9 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
   font-size: 2em;
   margin: 0;
 }
+.margin-bottom {
+  margin-bottom: 10px;
+}
 
 // fonts
 @font-face {
@@ -781,6 +784,25 @@ ul.social.list-inline {
   border: 5px solid $white;
   padding: 15px;
   border-radius: 5px;
+  .panel-default {
+    .panel-heading {
+      background-color: $pink;
+      color: $white;
+      .panel-title {
+        a {
+          transition: $transition;
+          &:hover, &:focus {
+            text-decoration: none;
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+  .panel-body {
+      background-color: $dark-purple;
+      color: $white;
+    }
 }
 .professionals {
   background-color: $button-blue;
