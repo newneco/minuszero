@@ -86,6 +86,14 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
   margin: 0;
   padding: 0;
 }
+.font {
+  font-family: 'chinese-rocks';
+  font-size: 2em;
+  margin: 0;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
 
 // fonts
 @font-face {
@@ -737,6 +745,14 @@ ul.social.list-inline {
   }
 }
 
+.rules {
+  border: 2px solid $white;
+  background-color: $time-blue;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  padding: 15px;
+}
+
 //TERMS
 .terms {
   margin-top: 10px;
@@ -769,6 +785,40 @@ ul.social.list-inline {
 .shuttle-right {
   background-color: $dark-purple;
 }
+
+//RAIL JAM
+.jam-info {
+  background-color: $dark-purple;
+  border: 5px solid $white;
+  padding: 15px;
+  border-radius: 5px;
+  .panel-default {
+    .panel-heading {
+      background-color: $pink;
+      color: $white;
+      .panel-title {
+        a {
+          transition: $transition;
+          &:hover, &:focus {
+            text-decoration: none;
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+  .panel-body {
+      background-color: $dark-purple;
+      color: $white;
+    }
+}
+.professionals {
+  background-color: $button-blue;
+  border: 5px solid $white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
 
 @media screen and (min-width: 320px) { 
  .upgrades {
