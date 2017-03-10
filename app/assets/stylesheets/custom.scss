@@ -715,7 +715,7 @@ ul.social.list-inline {
       .panel-default {
         .panel-heading {
           background-color: $dark-purple;
-          color: $yellow;
+          color: $pink;
           overflow: hidden;
           .panel-title {
             font-size: 1.5em;
@@ -770,6 +770,7 @@ ul.social.list-inline {
   border: 2px solid $white;
   border-radius: 5px;
   padding: 15px;
+  margin-bottom: 30px;
 }
 .important {
   background-color: $red;
