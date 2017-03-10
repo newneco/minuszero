@@ -749,7 +749,7 @@ ul.social.list-inline {
   border: 2px solid $white;
   background-color: $time-blue;
   border-radius: 5px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   padding: 15px;
 }
 
@@ -766,7 +766,7 @@ ul.social.list-inline {
 }
 
 //SHUTTLE
-.important, .shuttle-left, .shuttle-right {
+.important, .shuttle-left, .shuttle-right, .manchester {
   border: 2px solid $white;
   border-radius: 5px;
   padding: 15px;
@@ -785,6 +785,9 @@ ul.social.list-inline {
 }
 .shuttle-right {
   background-color: $dark-purple;
+}
+.manchester {
+  background-color: $green;
 }
 
 //RAIL JAM
