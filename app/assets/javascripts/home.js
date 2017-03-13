@@ -47,12 +47,12 @@ function createEmail(){
 }
 
 function loadPopUp(){
-    //if(!$.cookie('popup')){
-    //    $.cookie('popup', '1', { expires: 7 });   
+    if(!$.cookie('popup')){
+        $.cookie('popup', '1', { expires: 7 });   
         
         $("#btnModal").removeAttr("disabled");
         $("#initialModal").modal();
-    //}
+    }
 }
 
 function createModalEmail(){
