@@ -269,15 +269,16 @@ img {
 }
 
 .lineup {
- // background-image: image-url('section-two-bg.jpg');
- //background-color: button-blue;
-  // border-top: 2px solid $white;
-  // border-right: 2px solid $white;
-  // border-left: 2px solid $white;
-  overflow: hidden;
-  padding: 0 0 25px 0;
+  // background-image: image-url('section-two-bg.jpg');
+ // background-color: $red;
+  padding: 20px 0;
   min-height: 500px;
-  background-color: $dark-purple;
+  display: table;
+  // border: 2px solid $white;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .vip-tickets {
@@ -285,7 +286,12 @@ img {
  // background-color: $red;
   padding: 20px 0;
   min-height: 250px;
+  display: table;
   // border: 2px solid $white;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .ga-tickets {
@@ -293,9 +299,14 @@ img {
 //  background-color: $light-purple;
   // margin: 15px 0 15px 15px;
   // border: 2px solid $white;
-  padding: 78px;
+  // padding: 78px;
   overflow: hidden;
   min-height: 250px;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle;
+  }
   // border-top: 2px solid $white;
   // border-right: 2px solid $white;
   // border-left: 2px solid $white;
@@ -310,8 +321,10 @@ img {
   background-size: cover;
   height: 360px;
   border: 2px solid $white;
-  .headers {
-    padding-top: 14vh;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle
   }
  }
  .merch {
@@ -320,17 +333,24 @@ img {
   height: 360px;
   border: 2px solid $white;
   overflow: hidden;
-  .headers {
-    padding-top: 14vh;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle
   }
  }
 
- .weather {
-  background-image: image-url('weather.jpg');
+ .railjam {
+  background-image: image-url('railjam.jpg');
   background-size: cover;
   height: 360px;
   border: 2px solid $white;
   overflow: hidden;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle
+  }
   
   .widget-left {
     background-color: transparent;
@@ -890,6 +910,12 @@ ul.social.list-inline {
       color: $button-blue;
     }
   }
+  // .vip-tickets {
+  //   min-height: 250px;
+  // }
+  // .ga-tickets {
+  //   min-height: 300px;
+  // }
 }
 
 @media screen and (min-width: 480px) { 
@@ -980,6 +1006,9 @@ ul.social.list-inline {
   }
   .hero header {
     top: 20vh;
+  }
+  .ga-tickets {
+    min-height: 250px;
   }
 }
 
