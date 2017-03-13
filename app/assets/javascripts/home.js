@@ -2,6 +2,14 @@ $( document ).ready(function() {
     $('#emailForm').submit(function (evt) {
         evt.preventDefault();
     });
+    
+    $('#initialModal').on('show.bs.modal', function (e) {
+      $(".modal-dialog").addClass("custom-modal");
+    })
+    
+    $('#initialModal').on('hide.bs.modal', function (e) {
+      $(".modal-dialog").removeClass("custom-modal");
+    })
 });
 
 function isEmail(email) {
@@ -39,12 +47,12 @@ function createEmail(){
 }
 
 function loadPopUp(){
-    if(!$.cookie('popup')){
-        $.cookie('popup', '1', { expires: 7 });   
+    //if(!$.cookie('popup')){
+    //    $.cookie('popup', '1', { expires: 7 });   
         
         $("#btnModal").removeAttr("disabled");
         $("#initialModal").modal();
-    }
+    //}
 }
 
 function createModalEmail(){
