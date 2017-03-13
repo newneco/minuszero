@@ -5,11 +5,18 @@
 	</div>
   	<div class="jam-info col-xs-12">
     	<div class="row">
-      		<div class="col-xs-12 col-md-6">
-        		<%= image_tag('railjam.jpg', :class => 'margin-bottom') %>
+      		<div class="col-xs-12 col-md-7">
+      			<div class="row">
+      				<div class="col-xs-8"><%= image_tag('railjam.jpg', :class => 'margin-bottom') %></div>
+      				<div class="col-xs-4">
+      					<%= image_tag('railjam.jpg', :class => 'margin-bottom') %>
+      					<%= image_tag('railjam.jpg') %>
+      				</div>
+      			</div>
+        		
         		<%= image_tag('rail-jam.png') %>
       		</div>
-      	<div class="col-xs-12 col-md-6">
+      	<div class="col-xs-12 col-md-5">
         	<p>Join Minus Zero in the most unique  Rail Jam &amp; Jump ever, fueled by Monster Energy at Stratton Mountain Resort.</p> 
         	<p>This is an on mountain competition featuring a big air jump and many rails for more advanced riders at a higher difficulty level. 150 spots in qualifying rounds  from 9-11am; top 30 riders move in to finals  from 12-2pm.</p>
         	<p><strong>ALL FINALISTS RECEIVE  MINUS ZERO FESTIVAL TICKET FOR SAT. 4/8!</strong>  Bonus: Special demonstration from professional athletes showing us their best jibbing and jumps immediately following the competition.</p>
@@ -18,10 +25,10 @@
   			<div class="panel panel-default">
     			<div class="panel-heading" role="tab" id="headingOne">
       				<h4 class="panel-title">
-        			<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          			What is the price?
-        			</a>
-     			 </h4>
+        				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          				What is the price?
+        				</a>
+     			 	</h4>
     		</div>
     		<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       			<div class="panel-body">
@@ -90,6 +97,22 @@
     </div>
   </div>
   <br>
+  <div class="col-xs-12">
+  	<h2 class="title text-center margin-top">Sponsored by</h2>
+  </div>
+  <div class="sponsors">
+  	<!-- <div class="row">
+  		<div class="col-xs-4"><%= image_tag('minus-zero-festival-logo-new.png', :class => 'image-size') %></div>
+  		<div class="col-xs-4"><%= image_tag('monster-logo.png', :class => 'image-size-two') %></div>
+  		<div class="col-xs-4">><%= image_tag('stratton-logo.png', :class => 'image-size-three') %></div>
+  	</div> -->
+  	<ul class="list-unstyled list-inline text-center">
+  		<li><%= image_tag('minus-zero-festival-logo-new.png', :class => 'image-size') %></li>
+  		<li><%= image_tag('monster-logo.png', :class => 'image-size-two') %></li>
+  		<li><%= image_tag('stratton-logo.png', :class => 'image-size-three') %></li>
+  	</ul>
+  </div>
+  
   <!-- <h2 class="title text-center">Star-studded Lineup</h2>
 <div class="professionals">
     <div class="row">

@@ -100,6 +100,19 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
   margin-top: 50px;
 }
 
+.image-size {
+  height: 190px;
+  width: 250px
+}
+.image-size-two {
+  height: 200px;
+  width: 360px
+}
+.image-size-three {
+  height: 190px;
+  width: 300px
+}
+
 // fonts
 @font-face {
   font-family: 'chinese-rocks';
