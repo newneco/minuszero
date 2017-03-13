@@ -1040,7 +1040,7 @@ ul.social.list-inline {
   //   top: 25vh;
   // }
 }
-
+/*
 .modal {
 }
 .vertical-alignment-helper {
@@ -1049,15 +1049,23 @@ ul.social.list-inline {
     width: 100%;
 }
 .vertical-align-center {
-    /* To center vertically */
     display: table-cell;
     vertical-align: middle;
 }
+*/
+
+.custom-modal {
+    -webkit-transform: translate(0, -webkit-calc(50vh - 130px)) !important;
+    -ms-transform: translate(0, -ms-calc(50vh - 130px)) !important;
+    -o-transform: translate(0, -o-calc(50vh - 130px)) !important;
+    transform: translate(0, calc(50vh - 130px)) !important;
+}
+
 .modal-content {
-    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+   
     width:inherit;
     height:inherit;
-    /* To center horizontally */
+    
     margin: 0 auto;
     color: $white;
     background-color: $green;
@@ -1084,7 +1092,6 @@ ul.social.list-inline {
       border-top: 0px solid #e5e5e5;
     }
 }
-
 
 
 
