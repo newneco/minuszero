@@ -58,15 +58,12 @@ html {
 }
 
 .padding-top {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
-// .border-left-lineup {
-//   border-left: 2px solid $white;
-// }
-// .border-right-lineup {
-//   border-right: 2px solid $white;
-// }
+.outline {
+  border: 3px solid $white;
+}
 
 
 // transitions
@@ -93,7 +90,7 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
   margin: 0;
 }
 .margin-bottom {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .margin-top {
@@ -247,28 +244,48 @@ img {
 
 .radius {
   border-radius: 0;
-  
 }
 
 .padding {
   padding: 0 0 40px 0;
 }
 
+.lineup-padding {
+  padding: 0 30px;
+}
+
+.lineup-list {
+  font-family: 'chinese-rocks';
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-shadow: $text-shadow;
+  color: $yellow;
+
+}
+
+.image-padding {
+  width: 60%;
+  padding: 10px 0 0 0;
+}
+
 .lineup {
  // background-image: image-url('section-two-bg.jpg');
  //background-color: button-blue;
-  border-top: 2px solid $white;
+  // border-top: 2px solid $white;
   // border-right: 2px solid $white;
-  border-left: 2px solid $white;
+  // border-left: 2px solid $white;
   overflow: hidden;
-  padding: 128px 0;
+  padding: 0 0 25px 0;
+  min-height: 500px;
+  background-color: $dark-purple;
 }
 
 .vip-tickets {
   // background-image: image-url('section-two-bg.jpg');
  // background-color: $red;
   padding: 20px 0;
-  border: 2px solid $white;
+  min-height: 250px;
+  // border: 2px solid $white;
 }
 
 .ga-tickets {
@@ -278,9 +295,10 @@ img {
   // border: 2px solid $white;
   padding: 78px;
   overflow: hidden;
+  min-height: 250px;
   // border-top: 2px solid $white;
-  border-right: 2px solid $white;
-  border-left: 2px solid $white;
+  // border-right: 2px solid $white;
+  // border-left: 2px solid $white;
 }
 
 .underline {
@@ -390,7 +408,6 @@ img {
 
 .hero {
   overflow: hidden;
-  // height: 85vh;
   position: relative;
   width: 100%;
 }
@@ -522,12 +539,12 @@ img {
     line-height: 32px;
     font-size: 1.5em;
     font-weight: 700;
-    text-shadow: $text-shadow;
+    // text-shadow: $text-shadow;
   }
   ul {
     li {
       font-size: 1.2em;
-      text-shadow: 1px 1px 1px #666;
+      // text-shadow: 1px 1px 1px #666;
     }
   }
 }
