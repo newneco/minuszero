@@ -48,4 +48,6 @@ var x = setInterval(function() {
   $('.dropdown-toggle').dropdown()
 
 
+$('#collapseOne').collapse("hide");
+$('#accordion').collapse({hide: true})
 });

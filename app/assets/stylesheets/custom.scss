@@ -75,6 +75,7 @@ $transition: all 0.5s ease;
 // helpers
 $text-shadow: 2px 2px 2px $dark-purple;
 $lineup-shadow: 1px 1px 1px $dark-purple;
+
 .overflow {
   overflow: hidden;
 }
@@ -85,6 +86,31 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
   font-size: 1.5em !important;
   margin: 0;
   padding: 0;
+}
+.font {
+  font-family: 'chinese-rocks';
+  font-size: 2em;
+  margin: 0;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.image-size {
+  height: 190px;
+  width: 250px
+}
+.image-size-two {
+  height: 200px;
+  width: 360px
+}
+.image-size-three {
+  height: 190px;
+  width: 300px
 }
 
 // fonts
@@ -707,7 +733,7 @@ ul.social.list-inline {
       .panel-default {
         .panel-heading {
           background-color: $dark-purple;
-          color: $yellow;
+          color: $pink;
           overflow: hidden;
           .panel-title {
             font-size: 1.5em;
@@ -737,6 +763,14 @@ ul.social.list-inline {
   }
 }
 
+.rules {
+  border: 2px solid $white;
+  background-color: $time-blue;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
 //TERMS
 .terms {
   margin-top: 10px;
@@ -750,10 +784,11 @@ ul.social.list-inline {
 }
 
 //SHUTTLE
-.important, .shuttle-left, .shuttle-right {
+.important, .shuttle-left, .shuttle-right, .manchester {
   border: 2px solid $white;
   border-radius: 5px;
   padding: 15px;
+  margin-bottom: 30px;
 }
 .important {
   background-color: $red;
@@ -769,6 +804,49 @@ ul.social.list-inline {
 .shuttle-right {
   background-color: $dark-purple;
 }
+.manchester {
+  background-color: $green;
+}
+
+//RAIL JAM
+.jam-info {
+  background-color: $dark-purple;
+  border: 5px solid $white;
+  padding: 15px;
+  border-radius: 5px;
+  .panel-default {
+    .panel-heading {
+      background-color: $pink;
+      color: $white;
+      .panel-title {
+        a {
+          transition: $transition;
+          &:hover, &:focus {
+            text-decoration: none;
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+  .panel-body {
+      background-color: $dark-purple;
+      color: $white;
+    }
+}
+.professionals {
+  background-color: $button-blue;
+  border: 5px solid $white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.modal-header .close {
+  color: $pink;
+  font-size: 3em;
+  opacity: 1;
+}
+
 
 @media screen and (min-width: 320px) { 
  .upgrades {
