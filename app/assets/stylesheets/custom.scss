@@ -58,15 +58,12 @@ html {
 }
 
 .padding-top {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
-// .border-left-lineup {
-//   border-left: 2px solid $white;
-// }
-// .border-right-lineup {
-//   border-right: 2px solid $white;
-// }
+.outline {
+  border: 3px solid $white;
+}
 
 
 // transitions
@@ -75,6 +72,7 @@ $transition: all 0.5s ease;
 // helpers
 $text-shadow: 2px 2px 2px $dark-purple;
 $lineup-shadow: 1px 1px 1px $dark-purple;
+
 .overflow {
   overflow: hidden;
 }
@@ -92,7 +90,24 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
   margin: 0;
 }
 .margin-bottom {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.image-size {
+  height: 190px;
+  width: 250px
+}
+.image-size-two {
+  height: 200px;
+  width: 360px
+}
+.image-size-three {
+  height: 190px;
+  width: 300px
 }
 
 // fonts
@@ -229,28 +244,54 @@ img {
 
 .radius {
   border-radius: 0;
-  
 }
 
 .padding {
   padding: 0 0 40px 0;
 }
 
+.lineup-padding {
+  padding: 0 30px;
+}
+
+.lineup-list {
+  font-family: 'chinese-rocks';
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-shadow: $text-shadow;
+  color: $yellow;
+
+}
+
+.image-padding {
+  width: 70%;
+  padding: 10px 0 0 0;
+}
+
 .lineup {
- // background-image: image-url('section-two-bg.jpg');
- //background-color: button-blue;
-  border-top: 2px solid $white;
-  // border-right: 2px solid $white;
-  border-left: 2px solid $white;
-  overflow: hidden;
-  padding: 128px 0;
+  // background-image: image-url('section-two-bg.jpg');
+ // background-color: $red;
+  padding: 20px 0;
+  min-height: 500px;
+  display: table;
+  // border: 2px solid $white;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .vip-tickets {
   // background-image: image-url('section-two-bg.jpg');
  // background-color: $red;
   padding: 20px 0;
-  border: 2px solid $white;
+  min-height: 250px;
+  display: table;
+  // border: 2px solid $white;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .ga-tickets {
@@ -258,11 +299,17 @@ img {
 //  background-color: $light-purple;
   // margin: 15px 0 15px 15px;
   // border: 2px solid $white;
-  padding: 78px;
+  // padding: 78px;
   overflow: hidden;
+  min-height: 250px;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle;
+  }
   // border-top: 2px solid $white;
-  border-right: 2px solid $white;
-  border-left: 2px solid $white;
+  // border-right: 2px solid $white;
+  // border-left: 2px solid $white;
 }
 
 .underline {
@@ -274,8 +321,10 @@ img {
   background-size: cover;
   height: 360px;
   border: 2px solid $white;
-  .headers {
-    padding-top: 14vh;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle
   }
  }
  .merch {
@@ -284,17 +333,24 @@ img {
   height: 360px;
   border: 2px solid $white;
   overflow: hidden;
-  .headers {
-    padding-top: 14vh;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle
   }
  }
 
- .weather {
-  background-image: image-url('weather.jpg');
+ .railjam {
+  background-image: image-url('railjam.jpg');
   background-size: cover;
   height: 360px;
   border: 2px solid $white;
   overflow: hidden;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle
+  }
   
   .widget-left {
     background-color: transparent;
@@ -372,7 +428,6 @@ img {
 
 .hero {
   overflow: hidden;
-  // height: 85vh;
   position: relative;
   width: 100%;
 }
@@ -468,7 +523,7 @@ img {
     }
   }
   .social-icons {
-    margin: 5px 0 0 0;
+    margin: 0;
     // padding-top: 5px;
     font-size: 2em;
     color: yellow;
@@ -504,12 +559,12 @@ img {
     line-height: 32px;
     font-size: 1.5em;
     font-weight: 700;
-    text-shadow: $text-shadow;
+    // text-shadow: $text-shadow;
   }
   ul {
     li {
       font-size: 1.2em;
-      text-shadow: 1px 1px 1px #666;
+      // text-shadow: 1px 1px 1px #666;
     }
   }
 }
@@ -715,7 +770,7 @@ ul.social.list-inline {
       .panel-default {
         .panel-heading {
           background-color: $dark-purple;
-          color: $yellow;
+          color: $pink;
           overflow: hidden;
           .panel-title {
             font-size: 1.5em;
@@ -745,6 +800,14 @@ ul.social.list-inline {
   }
 }
 
+.rules {
+  border: 2px solid $white;
+  background-color: $time-blue;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
 //TERMS
 .terms {
   margin-top: 10px;
@@ -758,10 +821,11 @@ ul.social.list-inline {
 }
 
 //SHUTTLE
-.important, .shuttle-left, .shuttle-right {
+.important, .shuttle-left, .shuttle-right, .manchester {
   border: 2px solid $white;
   border-radius: 5px;
   padding: 15px;
+  margin-bottom: 30px;
 }
 .important {
   background-color: $red;
@@ -776,6 +840,9 @@ ul.social.list-inline {
 }
 .shuttle-right {
   background-color: $dark-purple;
+}
+.manchester {
+  background-color: $green;
 }
 
 //RAIL JAM
@@ -811,6 +878,12 @@ ul.social.list-inline {
   border-radius: 5px;
 }
 
+.modal-header .close {
+  color: $pink;
+  font-size: 3em;
+  opacity: 1;
+}
+
 
 @media screen and (min-width: 320px) { 
  .upgrades {
@@ -837,6 +910,12 @@ ul.social.list-inline {
       color: $button-blue;
     }
   }
+  // .vip-tickets {
+  //   min-height: 250px;
+  // }
+  // .ga-tickets {
+  //   min-height: 300px;
+  // }
 }
 
 @media screen and (min-width: 480px) { 
@@ -928,6 +1007,9 @@ ul.social.list-inline {
   .hero header {
     top: 20vh;
   }
+  .ga-tickets {
+    min-height: 250px;
+  }
 }
 
 
@@ -958,7 +1040,7 @@ ul.social.list-inline {
   //   top: 25vh;
   // }
 }
-
+/*
 .modal {
 }
 .vertical-alignment-helper {
@@ -967,15 +1049,23 @@ ul.social.list-inline {
     width: 100%;
 }
 .vertical-align-center {
-    /* To center vertically */
     display: table-cell;
     vertical-align: middle;
 }
+*/
+
+.custom-modal {
+    -webkit-transform: translate(0, -webkit-calc(50vh - 130px)) !important;
+    -ms-transform: translate(0, -ms-calc(50vh - 130px)) !important;
+    -o-transform: translate(0, -o-calc(50vh - 130px)) !important;
+    transform: translate(0, calc(50vh - 130px)) !important;
+}
+
 .modal-content {
-    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+   
     width:inherit;
     height:inherit;
-    /* To center horizontally */
+    
     margin: 0 auto;
     color: $white;
     background-color: $green;
@@ -1002,7 +1092,3 @@ ul.social.list-inline {
       border-top: 0px solid #e5e5e5;
     }
 }
-
-
-
-
