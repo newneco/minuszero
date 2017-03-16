@@ -346,8 +346,10 @@ img {
   height: 360px;
   border: 2px solid $white;
   overflow: hidden;
-  .headers {
-    padding-top: 14vh;
+  display: table;
+  .link-cover {
+    display: table-cell;
+    vertical-align: middle
   }
   
   .widget-left {
@@ -787,22 +789,15 @@ ul.social.list-inline {
   }
 }
 
-.extra-info, .allowed {
+.extra-info {
   border: 2px solid $white;
+  background-color: $red;
   border-radius: 5px;
-  padding: 15px 15px;
   ul  {
     li {
       font-size: 1.5em;
     }
   }
-}
-.extra-info {
-  background-color: $red;
-}
-.allowed {
-  background-color: $green;
-  margin-bottom: 15px;
 }
 
 .rules {
@@ -1010,7 +1005,7 @@ ul.social.list-inline {
 
   }
   .hero header {
-    top: 15vh;
+    top: 20vh;
   }
   .ga-tickets {
     min-height: 250px;
@@ -1045,7 +1040,7 @@ ul.social.list-inline {
   //   top: 25vh;
   // }
 }
-
+/*
 .modal {
 }
 .vertical-alignment-helper {
@@ -1054,15 +1049,23 @@ ul.social.list-inline {
     width: 100%;
 }
 .vertical-align-center {
-    /* To center vertically */
     display: table-cell;
     vertical-align: middle;
 }
+*/
+
+.custom-modal {
+    -webkit-transform: translate(0, -webkit-calc(50vh - 130px)) !important;
+    -ms-transform: translate(0, -ms-calc(50vh - 130px)) !important;
+    -o-transform: translate(0, -o-calc(50vh - 130px)) !important;
+    transform: translate(0, calc(50vh - 130px)) !important;
+}
+
 .modal-content {
-    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+   
     width:inherit;
     height:inherit;
-    /* To center horizontally */
+    
     margin: 0 auto;
     color: $white;
     background-color: $green;
@@ -1089,7 +1092,3 @@ ul.social.list-inline {
       border-top: 0px solid #e5e5e5;
     }
 }
-
-
-
-
