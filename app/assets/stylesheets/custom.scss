@@ -582,6 +582,7 @@ video {
 }
 
 .section-two {
+
   p {
     font-family: 'Nunito', sans-serif;
     // font-size: 1em;
@@ -923,6 +924,9 @@ ul.social.list-inline {
 
 
 @media screen and (min-width: 320px) { 
+  .section-two {
+    margin-top: -5px;
+  }
  .upgrades {
     .btn-default {
       border: 2px solid $white;
@@ -987,6 +991,10 @@ ul.social.list-inline {
 
   .hero header {
     // top: 15vh;
+  }
+
+  .section-two {
+    margin-top: 0px;
   }
 
   
