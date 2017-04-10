@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require bootstrap
-//= require unitegallery.min.js
-//= require ug-theme-tiles.js
 //= require app
 //= require_tree .
 

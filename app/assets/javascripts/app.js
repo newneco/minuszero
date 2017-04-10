@@ -50,16 +50,11 @@ var x = setInterval(function() {
   $('#collapseOne').collapse("hide");
   $('#accordion').collapse({hide: true})
 
-
-  $("#gallery").unitegallery({
-    gallery_theme: "tiles"
-  });
-
   $('#collapseOne').collapse("hide");
   $('#accordion').collapse({hide: true})
 
 
-  jQuery("#gallery").unitegallery({
+  $("#gallery").unitegallery({
           
           //theme options:
           
@@ -68,11 +63,11 @@ var x = setInterval(function() {
           theme_preloader_vertpos: 100,   //the vertical position of the preloader
           theme_gallery_padding: 0,     //the horizontal padding of the gallery from the sides
           theme_appearance_order: "normal", //normal, shuffle, keep - the appearance order of the tiles. The keep is "keep order"
-          theme_auto_open:null        //auto open lightbox at start - if some number gived, like 0
+          theme_auto_open:null,        //auto open lightbox at start - if some number gived, like 0
           
           //gallery options:
           
-          gallery_theme: "tiles"        //choose gallery theme (if more then one themes includes)
+          gallery_theme: "tiles",        //choose gallery theme (if more then one themes includes)
           gallery_width:"100%",       //gallery width
           gallery_min_width: 150,       //gallery minimal width when resizing
           gallery_background_color: "",   //set custom background color. If not set it will be taken from css.
@@ -216,5 +211,5 @@ var x = setInterval(function() {
           lightbox_textpanel_css_description:{},        //textpanel additional css of the description
               
           
-        });
+    });
 });
