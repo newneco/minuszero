@@ -2,22 +2,18 @@
   <h1 class="page-title text-center">GALLERY</h1>
  
   <div id="gallery" style="display:none;">
-    <%= image_tag('https://s3.amazonaws.com/minuszero/Minuszero-000.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('https://s3.amazonaws.com/minuszero/Minuszero-000.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('https://s3.amazonaws.com/minuszero/thumbs/Minuszero-004-thumb.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('https://s3.amazonaws.com/minuszero/Minuszero-004.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('https://s3.amazonaws.com/minuszero/Minuszero-044b.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('https://s3.amazonaws.com/minuszero/Minuszero-044.jpg'), :'data-description' => 'merch.jpg') %>
-     <%= image_tag('https://s3.amazonaws.com/minuszero/Minuszero-001.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('https://s3.amazonaws.com/minuszero/Minuszero-001.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-   <%= image_tag('https://s3.amazonaws.com/minuszero/Minuszero-001.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('https://s3.amazonaws.com/minuszero/Minuszero-001.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
-    <%= image_tag('merch.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url('merch.jpg'), :'data-description' => 'merch.jpg') %>
+    <% @counter = 0 %>
+    <% @thumbnail = "https://s3.amazonaws.com/minuszero/thumbs/" %>
+    <% @file_num = 0 %>
+    
+    <% while @file_num != 5 %>
+        <%= image_tag(@thumbnail + @file_num.to_s + '.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url(@thumbnail + @file_num.to_s + '.jpg'), :'data-description' => 'merch.jpg') %>
+        <% @file_num += 1 %>
+      
+    <% end %>
+
+      
+
    <!--  <img alt="Lemon Slice"
          src="images/thumbs/tile1.jpg"
          data-image="images/big/tile1.jpg"
