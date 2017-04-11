@@ -2,14 +2,17 @@
   <h1 class="page-title text-center">GALLERY</h1>
  
   <div id="gallery" style="display:none;">
-    <% @counter = 0 %>
     <% @thumbnail = "https://s3.amazonaws.com/minuszero/thumbs/" %>
-    <% @file_num = 0 %>
+    <% @thumb_num = 0 %>
+
+    <% @big = "https://s3.amazonaws.com/minuszero/" %>
+    <% @big_num = 0 %>
     
-    <% while @file_num != 5 %>
-        <%= image_tag(@thumbnail + @file_num.to_s + '.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url(@thumbnail + @file_num.to_s + '.jpg'), :'data-description' => 'merch.jpg') %>
-        <% @file_num += 1 %>
-      
+    
+    <% while @thumb_num != 5 && @big_num !=5 %>
+        <%= image_tag(@thumbnail + @thumb_num.to_s + '.jpg', :class => 'margin-bottom', :alt => 'rail-jam', :'data-image' => image_url(@big + @big_num.to_s + '.jpg'), :'data-description' => 'merch.jpg') %>
+        <% @thumb_num += 1 %>
+        <% @big_num += 1 %>
     <% end %>
 
       
