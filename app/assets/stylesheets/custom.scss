@@ -48,7 +48,8 @@ html {
 }
 
 .pink {
-  color: $pink;
+  color: $pink !important;
+
 }
 .yellow {
   color: $yellow;
@@ -123,11 +124,10 @@ $lineup-shadow: 1px 1px 1px $dark-purple;
 }
 
 body {
-  background-color: $blue;
-  background-image: image-url('bg-two.jpg');
+  background-color: #a4cbec;
+  background-image: image-url('mz-bg.jpg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top center;
   color: $white;
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
@@ -276,9 +276,9 @@ img {
 
 .lineup {
   // background-image: image-url('section-two-bg.jpg');
- // background-color: $red;
-  padding: 20px 0;
-  min-height: 500px;
+  background-color: rgba(65, 2, 85, 0.90);
+  padding: 10px 0;
+  min-height: 400px;
   display: table;
   // border: 2px solid $white;
   .link-cover {
@@ -323,10 +323,11 @@ img {
 }
 
 .stratton {
-  background-image: image-url('stratton.jpg');
+  // background-image: image-url('stratton.jpg');
+  background-color: rgba(218, 52, 80, 0.9);
   background-size: cover;
-  height: 360px;
-  border: 2px solid $white;
+  min-height: 400px;
+  // border: 2px solid $white;
   display: table;
   .link-cover {
     display: table-cell;
@@ -336,8 +337,9 @@ img {
  .merch {
   background-image: image-url('merch.jpg');
   background-size: cover;
+  background-color: rgba(24, 24, 83, 0.77);
   height: 360px;
-  border: 2px solid $white;
+  // border: 2px solid $white;
   overflow: hidden;
   display: table;
   .link-cover {

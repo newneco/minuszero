@@ -4,74 +4,47 @@
     <%= video_tag("/minus-zero.mp4", controls: false, :autoplay => true, :loop => true, :muted => true)%>
   </div>
 </div>
-<div class="container-fluid" style="margin-top:-5px;">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-md-6 lineup outline">
+    <div class="lineup col-xs-12" style="margin-top: -3px;">
       <div class="link-cover">
-        <h2 class="page-title text-center">HEADLINERS</h2>
-        <h3 class="title text-center">Bassnectar + Griz + Zeds Dead</h3>
+        <h2 class="page-title text-center" style="font-size: 4em;">2017 HEADLINERS</h2>
+        <br>
+        <!-- <h3 class="title text-center">Bassnectar + Griz + Zeds Dead</h3> -->
         <br>
         <div class="col-xs-12">
           <p class="text-center">
             <%= link_to "FULL LINE UP HERE!", lineup_path, :class => "btn btn-default" %>
           </p>
         </div>
+      </div>
     </div>
-  </div><!-- display -->
-    <div class="col-xs-12 col-md-6">
-      <div class="row">
-        <div class="col-xs-12 vip-tickets outline">
-          <div class="link-cover">
-            <h2 class="title text-center">VIP TICKETS AVAILABLE</h2>
-            <p class="text-center">
-              <%= link_to "TICKETS", tickets_path, :class => "btn btn-default" %>
-            </p>
-          </div>
-        </div><!-- display -->
-        <div class="col-xs-12 ga-tickets outline">
-          <div class="link-cover">
-            <h2 class="title text-center">GA TICKETS AVAILABLE</h2>
-            <p class="text-center">
-              <%= link_to "TICKETS", tickets_path, :class => "btn btn-default" %>
-            </p>
-          </div>
-        </div><!-- display -->
-      </div><!-- row -->
-    </div><!-- display -->
-  </div><!-- row -->
-</div><!-- container -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="stratton col-xs-12 col-md-4">
+    <div class="merch col-xs-12">
       <div class="link-cover">
         <div class="headers">
-          <h2 class="title text-center">Minus Zero Lodging</h2>
+          <h2 class="page-title text-center" style="font-size: 4em;">MINUS ZERO MERCH</h2>
+        <br>
         </div>
-        <p class="text-center"><%= link_to "LEARN MORE!", lodging_path, :class => 'btn btn-default' %>
-          
+        <br>
+        <p class="text-center"><%= link_to "GO!", "http://merch.minuszerofestival.com/", :target => "_blank", :class => 'btn btn-default' %>
         </p>
       </div>
     </div>
-    <div class="merch col-xs-12 col-md-4">
+    <div class="stratton col-xs-12">
       <div class="link-cover">
         <div class="headers">
-          <h2 class="title text-center">Minus Zero Merch</h2>
+          <h2 class="page-title text-center" style="font-size: 4em;">STRATTON RESORT</h2>
+        <br>
         </div>
-        <p class="text-center"><%= link_to "STORE", "http://merch.minuszerofestival.com/", :target => "_blank", :class => 'btn btn-default' %>
-        </p>
-      </div>
-    </div>
-    <div class="railjam col-xs-12 col-md-4">
-      <div class="link-cover">
-        <div class="headers">
-          <h2 class="title text-center">Rail Jam + Jump</h2>
-        </div>
-        <p class="text-center"><%= link_to "LEARN MORE!", rail_jam_path, :class => 'btn btn-default' %>
+        <br>
+        <p class="text-center"><%= link_to "LEARN MORE!", "http://merch.minuszerofestival.com/", :target => "_blank", :class => 'btn btn-default' %>
         </p>
       </div>
     </div>
   </div>
-</div>
+</div><!-- container -->
+
+
    
 <div class="modal fade" id="initialModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog vertical-align-center" role="document">
