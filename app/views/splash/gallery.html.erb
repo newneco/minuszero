@@ -2,15 +2,15 @@
   <h1 class="page-title text-center">MINUS ZERO 2017 GALLERY</h1>
  
   <div id="gallery" style="display:none;">
-    <% @thumbnail = "https://s3.amazonaws.com/minuszero/thumbs/" %>
-    <% @thumb_num = 0 %>
+    <% @thumbnail = "https://s3.amazonaws.com/minuszero2/thumbs/1+(" %>
+    <% @thumb_num = 2 %>
 
-    <% @big = "https://s3.amazonaws.com/minuszero/" %>
-    <% @big_num = 0 %>
+    <% @big = "https://s3.amazonaws.com/minuszero2/1+(" %>
+    <% @big_num = 2 %>
     
     
-    <% while @thumb_num != 72 && @big_num != 72 %>
-        <%= image_tag(@thumbnail + @thumb_num.to_s + '.jpg', :class => 'margin-bottom', :alt => '', :'data-image' => image_url(@big + @big_num.to_s + '.jpg'), :'data-description' => 'MINUS ZERO 2017') %>
+    <% while @thumb_num != 621 && @big_num != 621 %>
+        <%= image_tag(@thumbnail + @thumb_num.to_s + ').jpg', :class => 'margin-bottom', :alt => '', :'data-image' => image_url(@big + @big_num.to_s + ').jpg'), :'data-description' => 'MINUS ZERO 2017') %>
         <% @thumb_num += 1 %>
         <% @big_num += 1 %>
     <% end %>
