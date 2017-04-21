@@ -22,6 +22,28 @@ class SplashController < ApplicationController
 
   def gallery
   end
+    
+  def load_more_gallery
+    _data = params[:data]
+    _qt = _data[:numitems].to_i
+    _iniVal = 440 + _qt
+    _qtAdd = 49
+    _endVal = _iniVal + _qtAdd
+    _show_loadmore = true
+      
+    if _endVal > 1059
+        _endVal = 1059
+        _show_loadmore = false
+    end
+    
+    _html = ""
+    for i in _iniVal.._endVal
+       _html = _html + "<img alt='' src='https://s3.amazonaws.com/minuszero2/thumbs1/#{i}.jpg' data-image='https://s3.amazonaws.com/minuszero2/#{i}.jpg' data-description='MINUS ZERO 2017'>"
+    end
+      
+    render json: { :html_items => _html, :show_loadmore => _show_loadmore, :success => true }
+    return
+  end
 
   def bios
   end

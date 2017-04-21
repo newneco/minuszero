@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get '/suscribe', to: 'splash#suscribe', as: 'suscribe'
   get '/send_contact', to: 'splash#send_contact', as: 'send_contact'
   get '/rail-jam', to: 'splash#rail-jam', as: 'rail-jam'
+    
+  post '/load_more_gallery', to: 'splash#load_more_gallery'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -48,10 +48,13 @@ var x = setInterval(function() {
 
   $('#collapseOne').collapse("hide");
   $('#accordion').collapse({hide: true})
-
-  $("#gallery").unitegallery({
+  
+  var api;
+    
+  api = $("#gallery").unitegallery({
           
           //theme options:
+          
           
           theme_enable_preloader: true,   //enable preloader circle
           theme_preloading_height: 200,   //the height of the preloading div, it show before the gallery
@@ -205,6 +208,13 @@ var x = setInterval(function() {
           lightbox_textpanel_desc_bold:null,          //textpanel description bold. if null - take from css
           lightbox_textpanel_css_description:{},        //textpanel additional css of the description
               
-          
+          gallery_enable_loadmore: true,
+          gallery_urlajax: "/load_more_gallery"
     });
+    
+    
+    setTimeout(function(){
+        //api.reloadGallery();
+        //alert(api.getNumItems());
+    },10000);
 });

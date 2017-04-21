@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require unitegallery.min
+//= require unitegallery
 //= require ug-theme-tiles
 //= require bootstrap-sprockets
 //= require bootstrap

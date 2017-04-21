@@ -2,18 +2,24 @@
   <h1 class="page-title text-center">MINUS ZERO 2017 GALLERY</h1>
  
   <div id="gallery" style="display:none;">
-    <% @thumbnail = "https://s3.amazonaws.com/minuszero2/thumbs/" %>
+    <% @thumbnail = "https://s3.amazonaws.com/minuszero2/thumbs1/" %>
     <% @thumb_num = 440 %>
 
     <% @big = "https://s3.amazonaws.com/minuszero2/" %>
     <% @big_num = 440 %>
     
-    
-    <% while @thumb_num != 1060 && @big_num != 1060 %>
+    <!--total: 1060-->
+    <% while @thumb_num != 490 && @big_num != 490 %>
         <%= image_tag(@thumbnail + @thumb_num.to_s + '.jpg', :class => 'margin-bottom', :alt => '', :'data-image' => image_url(@big + @big_num.to_s + '.jpg'), :'data-description' => 'MINUS ZERO 2017') %>
         <% @thumb_num += 1 %>
         <% @big_num += 1 %>
     <% end %>
+  </div>
+    
+  <div style="margin-top: 30px;" id="ug_loadmore_wrapper" style="display:none;">
+    <div class="ug-loadmore-button btn btn-default btn-block">LOAD MORE</div>  
+    <div class="ug-loadmore-loader loading_gif" style="display:none;"><%= image_tag("loading.gif")%></div>
+    <div class="ug-loadmore-error" style="display:none;">error...</div>
   </div>
   
 </div>
